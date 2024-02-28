@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C03 cpu</title>
+    <link rel="stylesheet" type="text/css" href="C01Java.css">
+</head>
+<body>
+    
+            <ol><a href="codigos.html">Regresar</a></ol>
+      
+    <h1>Código CPU</h1>
+    <hr>
+    <pre><code>
+        /*
+        *Nombre: Alejandro Loeza Chan
+        *Fecha: 06.02.2024
+        *Programa: CPU
+        *       Programa que emule una CPU
+        **/
+        import java.util.Scanner; //modulo que permite leer inputs
+
+        //Emulacion de una CPU basica
+        public class CPU {
+            private int acumulador;
+
+            //definiacion de un acumulador
+            public CPU(){
+                this.acumulador = 0;
+            }
+            
+            //Instrucciones para cargar valores al acumulador
+            public void cargar(int valor){
+                this.acumulador = valor;
+                System.out.println(valor + "cargando el acumulador");
+            }
+
+            //Instruccion para sumar inputs al acumulador
+            public void sumar(int valor){
+                this.acumulador += valor;
+            }
+
+           //Instruccion para restar inputs al acumulador
+            public void restar(int valor){
+                this.acumulador -= valor;
+            }
+
+            //instruccion para multiplicar inputs al acumulador
+            public void multiplicar(int valor){
+                this.acumulador *= valor;
+            }
+
+            //Instruccion para dividir el acumulador y los inputs
+            public void dividir(int valor){
+                if(valor != 0){
+                    this.acumulador /= valor;
+                }
+                else{
+                    //No se puede dividir entre cero
+                    System.out.println("Error! Division entre cero");
+                }
+            }
+
+            public int obtenerAcumulado() {
+                return acumulador;
+            }
+            
+            public static void main(String[] args){
+                CPU cpu = new CPU();
+                Scanner datos = new Scanner(System.in);
+
+                System.out.println("CPU single core ilentium 1");
+                System.out.println("Cargar numero entero");
+
+                cpu.cargar(datos.nextInt());
+
+                System.out.println("Numero a sumar");
+                cpu.sumar(datos.nextInt());
+                System.out.println("Acumulador despues de sumar: " + cpu.obtenerAcumulado());
+
+                System.out.println("Numero a restar");
+                cpu.restar(datos.nextInt());
+                System.out.println("Acumulador despues de restar: " + cpu.obtenerAcumulado());
+
+                System.out.println("Numero a multiplicar");
+                cpu.multiplicar(datos.nextInt());
+                System.out.println("Acumulador despues de multiplicar: " + cpu.obtenerAcumulado());
+
+                System.out.println("Numero a dividir: ");
+                cpu.dividir(datos.nextInt());
+                System.out.println("Acumulador despues de dividir: " + cpu.obtenerAcumulado());
+
+                System.out.println("Dividir entre cero");
+                cpu.dividir(0);
+            }
+        }
+    </code></pre> <hr>
+</body>
+</html>

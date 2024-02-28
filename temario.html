@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temarios</title>
+    <link rel="stylesheet" type="text/css" href="temario.css">
+</head>
+
+<body>
+    <nav class="nav"> 
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="codigos.html">Códigos</a></li>
+            <li><a href="documentación.html">Documentación</a></li>
+        </ul>
+    </nav>
+
+    <h1>Temas</h1>
+    <ol>
+        <li>Conceptos básicos.
+            <ol>
+                <li>Organización y arquitectura</li>
+                <li>Estructura y función</li>
+                <li>Breve historia de las computadoras</li>
+                <li>Evolución de la arquitectura Intel x86</li>
+                <li>Sistemas embebidos</li>
+                <li>Arquitectura ARM</li>
+                <li>Computacion en la Nube</li>
+            </ol>
+        </li>
+        <li>Una vista de alto nivel de la función e interconexión de la computadoras.
+            <ol>
+                <li>Componentes de la computadora</li>
+                <li>Función de la computadora</li>
+                <li>Estructura de interconexión</li>
+                <li>Interconexión bus</li>
+                <li>Interconexión punto a punto</li>
+                <li>PCI express</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h2>Conceptos básicos</h2>
+    <p>Al describir a la computadoras, es importante hacer una clara distincion
+        entre arquitectura computacional y organización computacional
+    </p>
+    
+    <h2>Organización y arquitectura</h2>
+    <p><strong>Arquitectura computacional:</strong>
+        Se refiere a los atributos de un sistema visibles a un programador. Dicho de otra forma;
+        aquellos atributos que tienen un impacto directo en la ejecución lógica
+        de un programa.
+    </p>
+    <p><strong>Organización computacional:</strong>
+        Se refiere a las unidades operacionales y las interconexiones necesarias
+        para llevar a cabo las especificaciones de la arquitectura.
+    </p>
+    
+    <h2>Estructura y función</h2>
+    <p><strong>Estructura:</strong>
+        Es la forma cómo los componentes se interrelacionan.
+    </p>
+    <ul>
+        <li><strong>Procesamiento de datos:</strong> Los datos pueden tomar una amplia variedad de formas y el rango de requerimientos de Porcesamiento es amplio </li>
+        <li><strong>Almacenamiento de datos:</strong> Incluso si la computadora está procesando datos sobre la marcha (es decir, los datos entran, se procesan y los resultados 
+            salen inmediatamente), la computadora debe almacenar temporalmente al menos aquellas piezas de datos en las que está trabajando en un momento dado.</li>
+        <li><strong>Moviento de datos:</strong> El entorno operativo de la computadora consta de dispositivos que sirven como
+        fuentes o destinos de datos.</li>
+        <li><strong>Control:</strong> Dentro de la computadora, una unidad control administra los recursos de la computadora y coordina el funcionamiento de sus partes
+        funcionales en respuesta a instrucciones.</li>
+        <li><strong>Unidad central de procesamiento(CPU):</strong> Controla el funcionamiento de la computadora y realiza sus funciones de procesamiento de datos; a menudo 
+        simplemente referida como procesador.</li>
+        <li><strong>Memoria principal:</strong> Almacen datos</li>
+        <li><strong>I/O: </strong> Mueve datos entre la computadora y su entorno externo.</li>
+        <li><strong>Núcleo: </strong>Es una unidad de procesamiento individual en un chip de procesador.</li>
+        <li><strong>Procesador: </strong> Una pieza física de silicio que contiene uno o mas nucleos</li>
+    </ul>
+
+    <h2>Breve historia de las computadoras</h2>
+    <p><strong>La primera generacion: Tubos de vacío.</strong></p>
+    <p>La primera generacíon de computadoras utilizaba tubos de vacío para los elementos lógicos digitales y la memoria. Se contruyeron varias computadoras de investiacíon
+        y luego comerciales utilizando tubos de vacío.
+    </p>
+    <p>Un enfoque de diseño fundamental implementado por primera vez en la computadora IAS se conoce como el concepto de programa almacenado. Esta idea se le atribuye al matemático
+       John von Neumann.
+    </p>
+    <p>En 1946, von Neumann y sus colegas comenzaron el diseo de una nueva computadora de programa almacenado, denominado computadora IAS. Aunque la computadora IAS no se completó hasta 1952,
+        es el prototipo de todas las computadoras posteriores de propósito general.
+    </p>
+
+    <h2>Evolución de la arquitectura Intel x86</h2>
+    <p>La evolución de la arquitectura Intel x86 ha sido marcada por avances significativos en términos de rendimiento, eficiencia y características. Desde sus primeras versiones en la década 
+        de 1970 hasta las arquitecturas modernas, la línea x86 ha experimentado varias generaciones y mejoras clave:
+    </p>
+    <ol>
+        <li>8086/8088: Introducidos en 1978, estos fueron los primeros procesadores x86 de 16 bits, marcando el inicio de la familia x86.</li>
+        <li>80286: Lanzado en 1982, el 286 fue el primer procesador x86 de 32 bits y trajo consigo mejoras significativas en rendimiento y capacidades de memoria.</li>
+        <li>80386: Lanzado en 1985, el 386 introdujo la capacidad de multitarea y memoria virtual, lo que lo convirtió en un hito importante en la historia de los microprocesadores.</li>
+        <li>80486: Introducido en 1989, el 486 mejoró aún más el rendimiento y la eficiencia de la arquitectura x86</li>
+        <li>Pentium y posteriores: A partir de la década de 1990, Intel introdujo la serie Pentium, seguida de Pentium Pro, Pentium II, Pentium III, etc. Estas generaciones introdujeron mejoras en la arquitectura, rendimiento y funciones.</li>
+        <li>Core Series: A partir de 2006, Intel lanzó la serie Core, que incluye Core 2 Duo, Core i3, i5, i7, etc. Estos procesadores han continuado mejorando el rendimiento y la eficiencia energética, y han introducido nuevas tecnologías como Hyper-Threading y Turbo Boost.</li>
+    </ol>
+
+    <h2>Sistemas embebidos</h2>
+    <p>
+        Los sistemas embebidos son sistemas informáticos especializados diseñados para realizar funciones específicas en dispositivos no informáticos. Están integrados en el hardware del dispositivo y suelen tener recursos limitados en comparación con las computadoras convencionales. 
+        Los sistemas embebidos se encuentran en una amplia gama de dispositivos, como electrodomésticos, dispositivos médicos, automóviles, juguetes, sistemas de control industrial, entre otros. Estos sistemas son críticos para el funcionamiento del dispositivo en el que están integrados 
+        y a menudo están diseñados para ser eficientes en cuanto a consumo de energía y costos.
+    </p>
+
+    <h2>Arquitectura ARM</h2>
+    <p>La arquitectura ARM (Advanced RISC Machine) es una arquitectura de conjunto de instrucciones reducido (RISC) desarrollada por ARM Holdings. Se utiliza ampliamente en dispositivos móviles, como teléfonos inteligentes, tabletas y dispositivos portátiles, debido a su eficiencia energética 
+       y rendimiento. La arquitectura ARM se caracteriza por su diseño simple y eficiente, que permite un bajo consumo de energía y un alto rendimiento. ARM también se ha expandido para su uso en otros dispositivos, como servidores y sistemas embebidos, debido a su versatilidad y escalabilidad.
+    </p>
+
+    <h2>Computacion en la Nube</h2>
+    <p>La computación en la nube, también conocida como "cloud computing", es un modelo que permite acceder a servicios de computación a través de internet, en lugar de depender de recursos locales o hardware físico. En este modelo, los servicios como servidores, almacenamiento, bases de datos, redes, software, análisis e inteligencia son proporcionados a través de la nube y se pagan según su uso.</p>
+    <p><strong>Beneficios: </strong></p>
+    <ul>
+        <li>Costo reducido: Los usuarios pueden reducir los costos de infraestructura al no tener que mantener servidores y equipos físicos.</li>
+        <li>Escalabilidad: Permite a las empresas escalar sus recursos de forma rápida y eficiente según sus necesidades.</li>
+        <li>Flexibilidad: Los usuarios pueden acceder a los servicios desde cualquier lugar y en cualquier momento.</li>
+        <li>Agilidad: Permite a las empresas implementar rápidamente nuevos servicios y aplicaciones sin tener que preocuparse por la infraestructura subyacente.</li>
+    </ul>
+</body>
+</html>

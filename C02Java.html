@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C02 Java</title>
+    <link rel="stylesheet" type="text/css" href="C01Java.css">
+</head>
+<body>
+
+    <ol><a href="codigos.html">  Regresar</a></ol>
+        
+    </nav>
+    <h1>Código Edad</h1> <hr>
+    <pre><code>
+        /*
+        *Nombre: Alejandro Loeza Chan
+        *Fecha: 06.02.2024
+        *Programa: C02Edad
+        *   Codigo 02 de la materia de programacion
+        *   Pide el nombre y edad del usuario, lo saluda
+        **/
+        import java.util.Scanner; //modulo que permite leer inputs
+        
+        public class C02Edad{
+            public static void main( String[] args ){
+                //inicializacion del objeto scanner
+                Scanner datoUsuario = new Scanner(System.in);
+                //pregunta nombre
+                System.out.println("¿Cual es tu nombre?: ");
+                //Leer el nombre
+                String nombre = datoUsuario.nextLine();
+                //Pregunta edad
+                System.out.println("¿Que edad tienes?: ");
+                //Leer la edad
+                int edad = datoUsuario.nextInt();
+                //Output del programa
+                System.out.println("Bienvenido " + nombre + " tienes " + edad + " años. ");
+            }
+        }
+    </code></pre> <hr>
+</body>
+</html>

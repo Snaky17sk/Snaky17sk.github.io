@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C01Java</title>
+    <link rel="stylesheet" type="text/css" href="C01Java.css">
+</head>
+<body>
+   
+            <ol><a href="codigos.html"> Regresar</a></ol>
+    
+    <h1>Código saludo</h1>
+    <hr>
+    <pre><code>
+        /*
+        *Nombre: Alejandro Loeza Chan
+        *Fecha: 06.02.2024
+        *Programa: C01Saludar
+        *    Codigo 01 de la materia de programacion
+        *    Pide el nombre del usuario y lo saluda
+        **/
+        import java.util.Scanner;//modulo que permite leer inputs
+        public class C01Saludar{
+            public static void main( String[] args ){
+            //Inicializacion del objeto scanner
+            Scanner nombre = new Scanner(System.in);
+            //Instrucciones para el usuario
+            System.out.println("Escribe tu nombre");
+            //Leer input del usuario
+            String userNombre = nombre.nextLine();
+            //Saludar al usuario
+            System.out.println("Bienvenido " + userNombre);
+            }
+        } 
+    </code></pre> <hr>
+</body>
+</html>
